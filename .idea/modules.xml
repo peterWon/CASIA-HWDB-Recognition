@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/HDWB.iml" filepath="$PROJECT_DIR$/.idea/HDWB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HWDB.iml" filepath="$PROJECT_DIR$/.idea/HWDB.iml" />
+    </modules>
+  </component>
+</project>
