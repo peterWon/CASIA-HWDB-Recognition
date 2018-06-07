@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe49e73e-7a08-4156-adf6-abcc301572a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processHWDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/processHWDB.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,35 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="processHWDB.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="processHWDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/processHWDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2153">
-              <caret line="205" column="88" selection-start-line="205" selection-start-column="88" selection-end-line="205" selection-end-column="88" />
+            <state relative-caret-position="541">
+              <caret line="217" column="86" lean-forward="true" selection-start-line="217" selection-start-column="86" selection-end-line="217" selection-end-column="86" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pascal_voc_io.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pascal_voc_io.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="152" column="55" lean-forward="true" selection-start-line="152" selection-start-column="55" selection-end-line="152" selection-end-column="55" />
-              <folding>
-                <element signature="e#64#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classify.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classify.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -75,8 +53,8 @@
         <option value="$PROJECT_DIR$/model/HWDB/deploy.prototxt" />
         <option value="$PROJECT_DIR$/classify-v1.py" />
         <option value="$PROJECT_DIR$/classify.py" />
-        <option value="$PROJECT_DIR$/processHWDB.py" />
         <option value="$PROJECT_DIR$/pascal_voc_io.py" />
+        <option value="$PROJECT_DIR$/processHWDB.py" />
       </list>
     </option>
   </component>
@@ -92,7 +70,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,10 +81,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/DeepLearning/sample_toolbox/labelImg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -200,11 +178,11 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15447599" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.09968521" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26128018" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28016788" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26547745" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -225,6 +203,33 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/processHWDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3690">
+          <caret line="205" column="88" selection-start-line="205" selection-start-column="88" selection-end-line="205" selection-end-column="88" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pascal_voc_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="152" column="55" lean-forward="true" selection-start-line="152" selection-start-column="55" selection-end-line="152" selection-end-column="55" />
+          <folding>
+            <element signature="e#64#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/processHWDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -351,29 +356,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pascal_voc_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-986">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#64#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+        <state relative-caret-position="450">
+          <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/processHWDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2153">
-          <caret line="205" column="88" selection-start-line="205" selection-start-column="88" selection-end-line="205" selection-end-column="88" />
+        <state relative-caret-position="541">
+          <caret line="217" column="86" lean-forward="true" selection-start-line="217" selection-start-column="86" selection-end-line="217" selection-end-column="86" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pascal_voc_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="152" column="55" lean-forward="true" selection-start-line="152" selection-start-column="55" selection-end-line="152" selection-end-column="55" />
-          <folding>
-            <element signature="e#64#74#0" expanded="true" />
           </folding>
         </state>
       </provider>

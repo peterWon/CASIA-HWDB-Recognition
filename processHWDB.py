@@ -165,22 +165,17 @@ def gen_train_test_sets(img_root_dir, labelmap, train_index, test_index, subsetn
             labelfile.writelines(str(label)+'\n')
 
 
-if __name__ == '__main__':
-    #gen_train_test_sets('/home/wz/DataSets/Offline/CASIA-HWDB1.1/IMG_CLS',
-                        # '/home/wz/DataSets/Offline/CASIA-HWDB1.1/labelmap_200.txt',
-                        # '/home/wz/DataSets/Offline/CASIA-HWDB1.1/trainval_200.txt',
-                        # '/home/wz/DataSets/Offline/CASIA-HWDB1.1/test_200.txt', 200)
-
-
-    # cv2.imshow('doc_img', doc_img)
-    # cv2.waitKey(0)
+def decode_HWDB_subset_v1(gnt_root_dir, img_save_dir, labelmap_ori):
     '''
-    gnt_root_dir = '/home/wz/DataSets/Offline/CASIA-HWDB1.1/Data'
-    img_save_dir = '/home/wz/DataSets/Offline/CASIA-HWDB1.1/IMG_CLS'
-
+    解析并保存HWDB-1的gnt格式数据到对应类别的图像文件夹
+    :param gnt_root_dir:
+    :param img_save_dir:
+    :param labelmap_ori: 原始字码表（若是gbk编码的，需要先利用transform_labelmap_to_utf8
+                         转换到utf-8编码）, 其中的‘.’和‘/’尚未以dot和slash表示
+    :return:
+    '''
     #初始化保存文件夹，节省处理时间
-    #labelmap_ori = ''
-    #init_save_dir(labelmap_ori, img_save_dir)
+    init_save_dir(labelmap_ori, img_save_dir)
 
     index_dict = {}
     for gnt in os.listdir(gnt_root_dir):
@@ -194,16 +189,30 @@ if __name__ == '__main__':
             else: index_dict[char_name] += 1
             cv2.imwrite(os.path.join(img_save_dir, char_name, str(index_dict[char_name]) + '.jpg'), sample[1])
         print('processed gnt file %s.' % gnt)
+
+
+def decode_HWDB_subset_v2(dgr_data_dir, img_save_dir, xml_writing_dir):
     '''
-
-
-    ##########################2.0##################################
-    dgr_data_dir = '/home/wz/DataSets/Offline/CASIA-HWDB2.2/Test_Dgr'
-    img_save_dir = '/home/wz/DataSets/Offline/CASIA-HWDB2.2/DOC_IMG/TEST'
-    xml_writing_dir = '/home/wz/DataSets/Offline/CASIA-HWDB2.2/DOC_IMG/TEST_XML'
+    解析并保存HWDB-v2的dgr格式数据到图像和相应的VOC格式的xml文件
+    :param dgr_data_dir:
+    :param img_save_dir:
+    :param xml_writing_dir:
+    :return:
+    '''
     dgrs = os.listdir(dgr_data_dir)
-    for dgr in dgrs[:10]:
+    for dgr in dgrs:
         doc_img, voc_xml = decode_DGR_to_imgs_and_vocxml(os.path.join(dgr_data_dir, dgr))
-        cv2.imwrite(os.path.join(img_save_dir, dgr[:-4]+'.jpg'), doc_img)
+        cv2.imwrite(os.path.join(img_save_dir, dgr[:-4] + '.jpg'), doc_img)
         voc_xml.save(xml_writing_dir + "/" + dgr[:-4] + XML_EXT)
         print('Processed file %s.' % dgr)
+
+
+if __name__ == '__main__':
+    #gen_train_test_sets('/home/wz/DataSets/Offline/CASIA-HWDB1.1/IMG_CLS',
+                        # '/home/wz/DataSets/Offline/CASIA-HWDB1.1/labelmap_200.txt',
+                        # '/home/wz/DataSets/Offline/CASIA-HWDB1.1/trainval_200.txt',
+                        # '/home/wz/DataSets/Offline/CASIA-HWDB1.1/test_200.txt', 200)
+
+    decode_HWDB_subset_v2('/home/wz/DataSets/Offline/CASIA-HWDB2.2/Train_Dgr',
+                          '/home/wz/DataSets/Offline/CASIA-HWDB2.2/DOC_IMG/TRAIN',
+                          '/home/wz/DataSets/Offline/CASIA-HWDB2.2/DOC_IMG/TRAIN_XML')
