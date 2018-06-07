@@ -28,7 +28,7 @@ http://www.nlpr.ia.ac.cn/databases/handwriting/Download.html
 
   以googlenet为基础模型，进行finetuning。直接训练全部类别无法收敛时，尝试分阶段训练。
 
-  训练后的测试结果为loss-1和loss-2分支准确率为100%，loss-3分支为99%。收敛很快，以0.01为基础学习率，32的batch size，不到10000次迭代就收敛了。
+  训练后的测试结果为loss-1和loss-2分支准确率为95%，loss-3分支为97%。收敛很快，以0.01为基础学习率，32的batch size，不到10000次迭代就收敛了。
 
   
 
@@ -39,11 +39,11 @@ http://www.nlpr.ia.ac.cn/databases/handwriting/Download.html
   这个论文里的模型比较简单，就是很基本的结构（模型图太长，不贴了）。
   加了BN（注意BN以及一些特殊层训练和deploy的区别），训练过程收敛也很快，过程图如下：
 
-  ![loss](sample-pics/loss.png)
+  ![loss](sample-pics/train_loss.png)
 
   
 
-![acc](sample-pics/acc.png)
+![acc](sample-pics/test_acc.png)
 
 - 前传时间及模型大小对比
 
