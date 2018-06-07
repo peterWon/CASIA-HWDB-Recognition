@@ -65,7 +65,7 @@ def decode_DGR_to_imgs_and_vocxml(dgr):
             format_code = fin.read(8)
             illus_len = size_of_header - 36
             illus = fin.read(illus_len)
-            if sys.version_info < (3, 5):
+            if sys.version_info < (3, 0, 0):
                 code_type = fin.read(20).decode('ASCII')
             else:
                 code_type = str(fin.read(20), 'ASCII')
@@ -91,7 +91,7 @@ def decode_DGR_to_imgs_and_vocxml(dgr):
                 for j in range(word_num):
                     tmp_code = fin.read(code_len)
                     try:
-                        if sys.version_info < (3, 5):
+                        if sys.version_info < (3, 0, 0):
                             label = tmp_code.decode('gbk')[0]
                         else:
                             label = str(tmp_code, ('gbk'))[0]
